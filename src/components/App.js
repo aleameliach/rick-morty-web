@@ -18,7 +18,6 @@ function App() {
 //VARIABLES DE ESTADO----  
 const [data, setData] = useState([]);
 const [name, setName] = useState("");
-const [species, setSpecies] = useState("");
 const [filterSpecies, setFilterSpecies] = useState([]);
 
 //USE EFFECT----

@@ -18,27 +18,37 @@
     border-radius: 10px;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    box-shadow: 0 0 20px #8cf47c;
+    align-items: center;
+    justify-content: center;
     
     &___Info {
-      background-color: white;
+      background-color: $background;
+      
   
     
     &--h3{
+    display:flex;
+    justify-content: center;
     text-decoration: none;
     font-family: $font-roboto;
-    color: grey;
+    color: white;
   
 
     }
     &--p{
     text-decoration: none;
     font-family: $font-roboto;
-    color: grey
+    color: white;
+    display:flex;
+    justify-content: center;
+    
 
     }
     }
     &--img{
-      
+      width:20px;
+      height:20px;
       
     }
   }
