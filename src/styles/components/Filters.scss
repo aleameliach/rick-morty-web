@@ -15,11 +15,13 @@
     
     
     &-input {
-      margin: 5px 45px 2px 45px;
+      margin: 5px 45px 2px 13px;
       width: 180px;
-      background-color: $background;
-      border-color: $font;
-      color: $font;
+      background-color: #DDDBDB;
+      border-color: $blue;
+      box-shadow: 0 0 20px #8cf47c;
+      color: $background;
+      border-radius: 10px;
     }
   }
   &__species {

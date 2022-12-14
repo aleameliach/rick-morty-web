@@ -21,9 +21,24 @@
     
     &___Info {
       background-color: white;
-      
+  
+    
+    &--h3{
+    text-decoration: none;
+    font-family: $font-roboto;
+    color: grey;
+  
+
+    }
+    &--p{
+    text-decoration: none;
+    font-family: $font-roboto;
+    color: grey
+
+    }
     }
     &--img{
+      
       
     }
   }
