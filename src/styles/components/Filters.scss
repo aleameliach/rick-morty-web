@@ -1,0 +1,32 @@
+@import "../core/reset.scss";
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
+
+.form {
+  background-color: $background;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+  font-family: $font-roboto;
+  color: $font;
+  
+
+  &__name {
+    
+    
+    &-input {
+      margin: 5px 45px 2px 45px;
+      width: 180px;
+      background-color: $background;
+      border-color: $font;
+      color: $font;
+    }
+  }
+  &__species {
+    padding-top: 5px;
+    &-label {
+      padding-right: 3px;
+    }
+
+  }
+}

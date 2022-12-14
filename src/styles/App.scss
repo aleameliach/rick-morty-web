@@ -1,0 +1,7 @@
+@import "core/reset";
+@import "core/mixins";
+@font-face {
+    font-family: "get_schwifty";   /*Can be any text*/
+    src: local("get_schwifty"),
+      url("../fonts/get_schwifty.ttf") format("truetype");
+  }
