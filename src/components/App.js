@@ -19,6 +19,7 @@ function App() {
 const [data, setData] = useState([]);
 const [name, setName] = useState("");
 const [species, setSpecies] = useState("");
+const [filterSpecies, setFilterSpecies] = useState([]);
 
 //USE EFFECT----
 
@@ -37,10 +38,39 @@ const handleSearchName = (value) => {
   setName(value);
 };
 
+const handleFilterSpecies = (value) => {
+  if (filterSpecies.includes(value)) {
+    const position = filterSpecies.indexOf(value);
+    filterSpecies.splice(position, 1);
+    setFilterSpecies([...filterSpecies]);
+  } else {
+    setFilterSpecies([...filterSpecies, value]);
+  }
+};
+
 //RENDER FUNCTIONS----
-const filteredCharacters = data.filter((searchCharacter) =>
-    searchCharacter.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())
-  );
+const paintSpecies = () => {
+    const characterSpecies = data.map((character) => character.species);
+    const oneSpecies = characterSpecies.filter((character, index) => {
+      return characterSpecies.indexOf(character) === index;
+    });
+    return oneSpecies;
+  };
+
+const filteredCharacters = data
+  .filter((searchCharacter) =>
+    searchCharacter.name
+    .toLocaleLowerCase()
+    .includes(name.toLocaleLowerCase())
+)
+.filter((character) => {
+  if (filterSpecies.length === 0) {
+    return true;
+  } else {
+    return filterSpecies.includes(character.species);
+  }
+})
+;
 
 //ROUTES---- 
 const CharacterFound = () => {
@@ -59,7 +89,7 @@ const CharacterFound = () => {
 };
 
 
-  return (
+return (
     <div className="App">
     <Header></Header>
     <Routes>
@@ -68,12 +98,14 @@ const CharacterFound = () => {
         path="/"
         element={
           <>
-            <Filters
-              handleForm={handleForm}
-              name={name}
-              specie={species}
-              handleSearchName={handleSearchName}
-            ></Filters>
+             <Filters
+                handleForm={handleForm}
+                name={name}
+                handleSearchName={handleSearchName}
+                filterSpecie={filterSpecies}
+                species={paintSpecies()}
+                handleFilterSpecies={handleFilterSpecies}
+              ></Filters>
 
             <CharacterList
               characters={filteredCharacters}
@@ -82,8 +114,6 @@ const CharacterFound = () => {
           </>
         }
       ></Route>
-     
-
       <Route
         path="/character/:characterId"
         element={<CharacterDetail character={CharacterFound()} />}

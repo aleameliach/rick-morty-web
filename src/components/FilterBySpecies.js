@@ -1,16 +1,27 @@
-const FilterBySpecies = (props) => {
-    return (
-      <fieldset className="form__species">
-        <label> {props.species} </label>
-        <label htmlFor="species" className="form__species-label">
-          Human
-        </label>
-        <input id="species" type="checkbox" className="form__species-input" />
-        <label htmlFor="species" className="form__species-label">
-          Alien
-        </label>
-        <input id="species" type="checkbox" className="form__species-input" />
-      </fieldset>
-    );
+const FilterBySpecies = ({ species, handleFilterSpecies, filterSpecie }) => {
+  const speciesValue = (ev) => {
+    return handleFilterSpecies(ev.target.value);
   };
-  export default FilterBySpecies;
+  const renderSpecies = () => {
+    return species.map((specie, index) => {
+      return (
+        <section key={index}>
+          <label htmlFor="specie" className="form__label">
+            {specie}
+          </label>
+          <input
+            id="specie"
+            type="checkbox"
+            value={specie}
+            checked={filterSpecie.includes(specie)}
+            className="form__input"
+            onChange={speciesValue}
+          />
+        </section>
+      );
+    });
+  };
+
+  return <fieldset className="form__species">{renderSpecies()}</fieldset>;
+};
+export default FilterBySpecies;

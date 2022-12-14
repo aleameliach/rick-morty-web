@@ -4,7 +4,7 @@ const FilterByName = (props) => {
     };
     return (
       <fieldset className="form__name">
-        <label htmlFor="city" className="form__name-label">
+        <label htmlFor="city" className="form__name-title">
           Search your favorite character
         </label>
         <input
@@ -13,7 +13,7 @@ const FilterByName = (props) => {
           name="name"
           value={props.name}
           onInput={handleName}
-          className="form__names-input"
+          className="form__name-input"
         ></input>
       </fieldset>
     );
