@@ -1,4 +1,4 @@
-<h1>🧬🥒👽Rick & Morty Character Finder and Details👽🥒🧬</h1>
+<h1>🧬🥒👽Rick & Morty Character Finder & Deets👽🥒🧬</h1>
 
 ![66133](https://user-images.githubusercontent.com/111571376/211884559-d5be0ce2-000c-40af-932c-526c0316349d.jpg)
 
