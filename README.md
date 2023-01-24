@@ -4,9 +4,9 @@
 
 ## Project description
 
-This project gets the characters of [Rick and Morty from an API](https://rickandmortyapi.com/documentation/#get-all-characters) and lets you see their information.
-Also, you can filter these characters by two criteria: by name and by species.
-If you click on any character, you can access an individual page for each of them that shows more details.
+Welcoming all Rick & Morty fans to this project that renders character's info from [Rick and Morty's API](https://rickandmortyapi.com/documentation/#get-all-characters).
+You can filter these characters by two criteria: by name and by species. And
+if you click on any character, you can access an individual page for each of them that shows more details like their species, number of episodes they're in, status, etc.
 
 ## Languages & Technologies
 ![https://github-readme-stats.vercel.app/api?username=marocena26&show_icons=true&theme=transparent](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -17,16 +17,16 @@ If you click on any character, you can access an individual page for each of the
 
 ## Components
 
-The estructure of this project is divided by components:
+This project is divided by components:
 
 - `App.js`: main component that controls all the others and the main logic of the app.
-- `CharacterDetail.js`: component that renders the individual page for each character with all their details.
-- `CharacterCard.js`: component that renders the basic information for one character.
-- `CharactersList.js`: component that renders the characters on the main page.
-- `FilterByName.js`: component that renders the input where the user can write a filter for the character name.
-- `FilterBySpecies.js`: component that renders the checkboxes that the user can click filter by species.
+- `CharacterDetail.js`: renders the individual page for each character with all their details.
+- `CharacterCard.js`: renders the basic information for one character.
+- `CharactersList.js`: renders the characters on the main page.
+- `FilterByName.js`: renders the input where the user can search via filter for a character.
+- `FilterBySpecies.js`: renders the checkboxes that the user can click filter by species.
 - `Filters.js`: component that renders all the filters in the page.
-- `Header.js`: component that renders the header image and title.
+- `Header.js`: renders the header image and title.
 
 ## Services
 
@@ -55,3 +55,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+## Thank you!
+
+I hope you enjoyed this proyect as much as I enjoyed coding it. Any feedback will be highly appreciated.

@@ -12,7 +12,7 @@ import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import Header from "./Header";
 import ls from "../services/localStorage";
-import Footer from "./Footer";
+
 
 
 
@@ -28,6 +28,7 @@ const [filterGender, setFilterGender] = useState("all")
 useEffect(() => {
   DataApi().then((dataResults) => {
     setData(dataResults);
+    ls.set("data", dataResults);
   });
 }, []);
 
@@ -38,6 +39,7 @@ const handleForm = (ev) => {
 
 const handleSearchName = (value) => {
   setName(value);
+  ls.set("input", value);
 };
 
 
@@ -54,9 +56,8 @@ const handleFilterSpecies = (value) => {
 };
 
 const handleReset = () => {
-  setData([...data]);
   setName("");
-  setFilterSpecies("All");
+  setFilterSpecies("");
   ls.remove("specie");
 	ls.remove("input");
 };

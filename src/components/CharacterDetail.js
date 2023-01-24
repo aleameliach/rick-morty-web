@@ -46,7 +46,7 @@ const CharacterDetail = (props) => {
         <p>4</p>
       </div>
       <p className="error-url__text__msg">
-        You'll need to search in another galaxy for that character. Sorry!
+        You'll need to search in another universe for that character. Sorry!
       </p>
       <Link className="error-url__text__btn" to="/">
         Return to characters

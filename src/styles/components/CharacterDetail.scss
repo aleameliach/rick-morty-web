@@ -18,9 +18,9 @@
     background-color: $blue;
     padding: 20px;
     border-radius: 10px;
-    border:solid 2px white;
+    border: solid 2px white;
     box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #a4f59c, 0 0 15px #a4f59c,
-		0 0 30px #a4f59c, 0 0 40px #a4f59c;
+      0 0 30px #a4f59c, 0 0 40px #a4f59c;
   }
 }
 .charInfo {
@@ -53,7 +53,6 @@
     transform: scale(1.2);
     transition: all 500ms;
     color: $purple;
-  
   }
 }
 .error-url {
@@ -93,26 +92,26 @@
       color: $font;
     }
     &__btn {
-    font-family: $font-roboto;
-    text-transform: uppercase;
-		padding: 10px 15px 10px 15px;
-		color: white;
-		font-size: 20px;
-		background-color: purple;
-		border: 0;
-		border-radius: 10px;
-		box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(255, 143, 255),
-			0 0 15px rgb(255, 143, 255), 0 0 30px rgb(255, 143, 255),
-			0 0 40px rgb(255, 143, 255);
-		&:hover {
-			transform: scale(1.05, 1.05);
-			transition: transform 2s;
-			color: purple;
-			background-color: rgb(255, 255, 255);
-		}
-		&:not(:hover) {
-			transition: transform 2s;
-		}
+      font-family: $font-roboto;
+      text-transform: uppercase;
+      padding: 10px 15px 10px 15px;
+      color: white;
+      font-size: 20px;
+      background-color: purple;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(255, 143, 255),
+        0 0 15px rgb(255, 143, 255), 0 0 30px rgb(255, 143, 255),
+        0 0 40px rgb(255, 143, 255);
+      &:hover {
+        transform: scale(1.05, 1.05);
+        transition: transform 2s;
+        color: purple;
+        background-color: rgb(255, 255, 255);
+      }
+      &:not(:hover) {
+        transition: transform 2s;
+      }
     }
-  } 
+  }
 }
