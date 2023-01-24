@@ -38,9 +38,7 @@ const handleSearchName = (value) => {
   setName(value);
 };
 
-const handleGender = (value) =>{
-  setFilterGender(value);
-};
+
 
 const handleFilterSpecies = (value) => {
   if (filterSpecies.includes(value)) {

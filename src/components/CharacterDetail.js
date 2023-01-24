@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import "../styles/components/CharacterDetail.scss";
+import error from "../images/error.png";
+import portal from "../images/portal.png";
 
 const CharacterDetail = (props) => {
-  console.log(props)
+  if (props.character !== undefined){
   
   return (
     <section className="characterSection">
@@ -29,5 +31,30 @@ const CharacterDetail = (props) => {
       </section>
     </section>
   );
+} else {
+  return(
+    <article className="error-url">
+    <img className="error-url__img" src={error} alt="Rick and Morty" />
+    <div className="error-url__text">
+      <div className="error-url__text__404">
+        <p>4</p>
+        <img
+          className="error-url__text__404--img"
+          src={portal}
+          alt="Green portal"
+        />
+        <p>4</p>
+      </div>
+      <p className="error-url__text__msg">
+        The character you're trying to find doesn't exist
+      </p>
+      <Link className="error-url__text__btn" to="/">
+        Go back to characters
+      </Link>
+    </div>
+  </article>
+
+  )
+}
 };
 export default CharacterDetail;
