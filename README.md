@@ -1,3 +1,5 @@
+![banner](https://user-images.githubusercontent.com/111571376/214305154-d6cae7b7-25a9-4c99-82f1-8add643196b6.jpeg)
+
 # Rick & Morty Character Finder
 
 ## Project description
@@ -5,6 +7,13 @@
 This project gets the characters of [Rick and Morty from an API](https://rickandmortyapi.com/documentation/#get-all-characters) and lets you see their information.
 Also, you can filter these characters by two criteria: by name and by species.
 If you click on any character, you can access an individual page for each of them that shows more details.
+
+## Languages & Technologies
+![https://github-readme-stats.vercel.app/api?username=marocena26&show_icons=true&theme=transparent](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 ## Components
 
@@ -21,11 +30,11 @@ The estructure of this project is divided by components:
 - `PickleImages.js`: component that imports the images used when we show an error page to the user.
 - `Reset.js`: component that renders a button that resets the filters inputs.
 
-## 🌐Services🌐
+## Services
 
 To make our app functional, we need two services:
 
-- `api.js`: contains the function that calls the API and returns the data from the server.
+- `Api.js`: contains the function that calls the API and returns the data from the server.
 - `localStorage.js`: contains functions necessary to manage the local storage in a easier way.
 
 
