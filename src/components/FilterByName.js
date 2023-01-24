@@ -4,13 +4,11 @@ const FilterByName = (props) => {
     };
     return (
       <fieldset className="form__name">
-        <label htmlFor="city" className="form__name-title">
-          Search your favorite character
-        </label>
         <input
           type="text"
           id="name"
           name="name"
+          placeholder="Search"
           value={props.name}
           onInput={handleName}
           className="form__name-input"

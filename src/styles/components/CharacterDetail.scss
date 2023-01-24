@@ -19,23 +19,27 @@
     padding: 20px;
     border-radius: 10px;
     border:solid 2px white;
-    box-shadow: 0 0 100px #8cf47c;
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #a4f59c, 0 0 15px #a4f59c,
+		0 0 30px #a4f59c, 0 0 40px #a4f59c;
   }
 }
 .charInfo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0px 10px 0px 20px;
   font-family: $font-roboto;
-  font-size: 14px;
+  font-size: 20px;
   &-h3 {
     font-family: "get_schwifty";
-    font-size: 30px;
+    font-size: 45px;
+    padding-bottom: 12px;
   }
 }
 .goBack {
   font-family: $font-roboto;
+  font-size: 26px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   background-color: $background;
@@ -48,7 +52,7 @@
   &-icon:hover {
     transform: scale(1.2);
     transition: all 500ms;
-    color: $green;
+    color: $purple;
   
   }
 }

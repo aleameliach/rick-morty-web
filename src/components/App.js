@@ -19,6 +19,7 @@ function App() {
 const [data, setData] = useState([]);
 const [name, setName] = useState("");
 const [filterSpecies, setFilterSpecies] = useState([]);
+const [filterGender, setFilterGender] = useState("all") 
 
 //USE EFFECT----
 
@@ -35,6 +36,10 @@ const handleForm = (ev) => {
 
 const handleSearchName = (value) => {
   setName(value);
+};
+
+const handleGender = (value) =>{
+  setFilterGender(value);
 };
 
 const handleFilterSpecies = (value) => {
@@ -69,6 +74,16 @@ const filteredCharacters = data
     return filterSpecies.includes(character.species);
   }
 })
+.filter((character)=> {
+if (filterGender === "all") {
+  return true;
+} else{
+  return character.gender.includes(filterGender)
+};
+
+}
+
+)
 ;
 
 //ROUTES---- 
@@ -104,6 +119,7 @@ return (
                 filterSpecie={filterSpecies}
                 species={paintSpecies()}
                 handleFilterSpecies={handleFilterSpecies}
+              
               ></Filters>
 
             <CharacterList

@@ -8,7 +8,7 @@ const CharacterDetail = (props) => {
     <section className="characterSection">
       <div className="goBack">
         <Link className="goBack-icon" to="/">
-          Go back
+          Return
         </Link>
       </div>
       <section className="character">

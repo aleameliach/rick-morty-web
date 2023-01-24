@@ -6,29 +6,79 @@
   background-color: $background;
   display: flex;
   justify-content: center;
-  padding: 10px 10px 10px 10px;
+  padding: 100px 20px 80px 20px;
   font-family: $font-roboto;
   color: $font;
+
+  &__gender{
+    font-size: 25px;
+  display:flex;
+
+  &-radio{
+    flex-direction: column;
+    background-color: $font;
+		gap: 6px;
+		justify-content: center;
+    margin-right: 15px;
+				width: 20px;
+				height: 20px;
+				box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $purple,
+					0 0 15px $purple, 0 0 30px $purple, 0 0 40px $purple;
+  } 
+  }
   
 
   &__name {
+    font-size: 20px;
+    padding: 5px;
+
+    &__gender{
+      display:flex;
+      font-size: 18px;
+    
+    }
     
     
     &-input {
       margin: 5px 45px 2px 13px;
-      width: 180px;
-      background-color: #DDDBDB;
+      width: 400px;
+      padding:7px;
+      height:35px;
+      font-size: 25px;
+      background-color: $font;
       border-color: $blue;
-      box-shadow: 0 0 20px #8cf47c;
+      box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #0bca87, 0 0 15px #0bca87,
+			0 0 30px #0bca87, 0 0 40px #0bca87;
       color: $background;
-      border-radius: 10px;
+  
     }
   }
   &__species {
     padding-top: 5px;
+    
     &-label {
       padding-right: 3px;
+      
     }
 
   }
+}
+.form__input{
+  flex-direction: column;
+    background-color: $font;
+		gap: 6px;
+		justify-content: center;
+    padding-top: 40px;
+    margin-right: 15px;
+				width: 20px;
+				height: 20px;
+				box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $purple,
+					0 0 15px $purple, 0 0 30px $purple, 0 0 40px $purple;
+}
+
+.form__label{
+  font-size: 25px;
+  color: $font;
+  padding-right: 10px;
+  padding-top: 40px;
 }
