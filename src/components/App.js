@@ -1,6 +1,7 @@
 import "../styles/App.scss";
 import "../fonts/get_schwifty.ttf";
 
+
 //HOOKS-----------
 import { useEffect, useState } from "react";
 import { Routes, Route, matchPath, useLocation } from "react-router-dom";
@@ -10,6 +11,7 @@ import Filters from "./Filters";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import Header from "./Header";
+import ls from "../services/localStorage";
 import Footer from "./Footer";
 
 
@@ -47,7 +49,16 @@ const handleFilterSpecies = (value) => {
     setFilterSpecies([...filterSpecies]);
   } else {
     setFilterSpecies([...filterSpecies, value]);
+    ls.set("specie", value);
   }
+};
+
+const handleReset = () => {
+  setData([...data]);
+  setName("");
+  setFilterSpecies("All");
+  ls.remove("specie");
+	ls.remove("input");
 };
 
 //RENDER FUNCTIONS----
@@ -117,7 +128,7 @@ return (
                 filterSpecie={filterSpecies}
                 species={paintSpecies()}
                 handleFilterSpecies={handleFilterSpecies}
-              
+                handleReset={handleReset}
               ></Filters>
 
             <CharacterList

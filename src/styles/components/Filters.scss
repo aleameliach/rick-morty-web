@@ -10,6 +10,32 @@
   font-family: $font-roboto;
   color: $font;
 
+  &__btn{
+    text-transform: uppercase;
+    color: $font;
+		width: 100px;
+		padding: 5px;
+		font-size: 22px;
+		height: 40px;
+		font-family: inherit;
+    justify-content: center;
+		background-color: $blue;
+		border: 2px solid rgb(140, 218, 22);
+		border-radius: 4px;
+		box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca,
+			0 0 30px #0ba9ca, 0 0 40px #0ba9ca;
+		&:hover {
+			transform: scale(1.05, 1.05);
+			transition: transform 2s;
+			color: purple;
+			background-color: rgb(255, 255, 255);
+		}
+		&:not(:hover) {
+			transition: transform 2s;
+		}
+
+  }
+
   &__gender{
     font-size: 25px;
   display:flex;
