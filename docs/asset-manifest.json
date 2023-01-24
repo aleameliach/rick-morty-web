@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.f8944436.css",
-    "main.js": "./static/js/main.d39c13cc.js",
+    "main.css": "./static/css/main.de531cf0.css",
+    "main.js": "./static/js/main.70dbeee3.js",
     "static/media/Rick_and_Morty.png": "./static/media/Rick_and_Morty.ac5509cfbeccebd423c0.png",
     "static/media/error.png": "./static/media/error.a87231f5554bc38762a7.png",
     "static/media/portal.png": "./static/media/portal.3e12379141f0ee01440e.png",
     "static/media/get_schwifty.ttf": "./static/media/get_schwifty.c3d1dfc692e3547fed16.ttf",
     "index.html": "./index.html",
-    "main.f8944436.css.map": "./static/css/main.f8944436.css.map",
-    "main.d39c13cc.js.map": "./static/js/main.d39c13cc.js.map"
+    "main.de531cf0.css.map": "./static/css/main.de531cf0.css.map",
+    "main.70dbeee3.js.map": "./static/js/main.70dbeee3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8944436.css",
-    "static/js/main.d39c13cc.js"
+    "static/css/main.de531cf0.css",
+    "static/js/main.70dbeee3.js"
   ]
 }
