@@ -106,8 +106,8 @@
       &:hover {
         transform: scale(1.05, 1.05);
         transition: transform 2s;
-        color: purple;
-        background-color: rgb(255, 255, 255);
+        color: $purple;
+        background-color: white;
       }
       &:not(:hover) {
         transition: transform 2s;

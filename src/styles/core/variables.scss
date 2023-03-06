@@ -8,4 +8,15 @@ $font: white;
 $blue: #08afc7;
 $green: #7fc764;
 $purple: #800080;
+$l-green: #a4f59c;
+$pink: #FF8FFF;
+$white: #fff;
+
+
+//sizes rem
+
+$defaultFontSize: 16;
+@function rem($pixels) {
+  @return ($pixels / $defaultFontSize * 1rem);
+}
 
