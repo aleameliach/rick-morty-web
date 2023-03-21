@@ -1,8 +1,9 @@
 ![banner](https://user-images.githubusercontent.com/111571376/214305154-d6cae7b7-25a9-4c99-82f1-8add643196b6.jpeg)
 
-# Rick & Morty Character Finder
+# 🚀👽🧬Rick & Morty Character Finder🧬👽🚀
 
-## Project description
+
+## 🔬Project description🔬
 
 Welcoming all Rick & Morty fans to this project that renders character's info from [Rick and Morty's API](https://rickandmortyapi.com/documentation/#get-all-characters).
 You can filter these characters by two criteria: by name and by species. And
@@ -15,7 +16,7 @@ if you click on any character, you can access an individual page for each of the
 ![https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-## Components
+## 🥒 Components
 
 This project is divided by components:
 
@@ -28,7 +29,7 @@ This project is divided by components:
 - `Filters.js`: component that renders all the filters in the page.
 - `Header.js`: renders the header image and title.
 
-## Services
+## 🌐 Services
 
 To make our app functional, we need two services:
 
@@ -56,6 +57,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-## Thank you!
+## 💚 Thank you!
 
 I hope you enjoyed this proyect as much as I enjoyed coding it. Any feedback will be highly appreciated.
